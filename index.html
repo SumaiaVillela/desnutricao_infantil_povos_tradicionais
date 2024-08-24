@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Baixo Peso e Muito Baixo Peso para a Idade</title>
+    <link rel="stylesheet" href="static\css\style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <h1 class="titulo">Desnutrição em povos tradicionais no Brasil: os piores e os melhores cenários</h1>
+        <h3 class="subtitulo">No Brasil, a taxa de desnutrição foi de 2,8% em 2023. Para sair do mapa da fome, é preciso que o país alcance 2,5%. Em povos tradicionais brasileiros, no entanto, o percentual para crianças de até 10 anos chega a mais de 10% com frequência, analisando os últimos 15 anos.</h3>
+        <p class="paragrafo">Dois dados importantes para caracterizar desnutrição são o "baixo peso" e "peso muito baixo" para a idade. Calculamos o percentual para esses critérios, mês a mês, de 2008 a 2023, para as comunidades tradicionais abaixo.</p>
+        <p class="paragrafo">Os trechos em branco são de meses em que houve 0% de desnutrição identificada. Se o quadrado é amarelo, o "baixo peso" é maior que o "peso muito baixo" na comunidade. Se é laranja, o contrário. E quanto mais forte a cor, maior é o percentual. </p>
+        <div class="legenda">
+            <div class="conteiner-escala-cor">
+                <div class="titulo-escala">Baixo peso para a idade</div>
+                <div class="escala-cor" id="escalaBaixoPeso"></div>
+                <div class="rotulos-escala">
+                    <span>0%</span>
+                    <span>10%+</span>
+                </div>
+            </div>
+            <div class="conteiner-escala-cor">
+                <div class="titulo-escala">Peso muito baixo para a idade</div>
+                <div class="escala-cor" id="escalaMuitoBaixoPeso"></div>
+                <div class="rotulos-escala">
+                    <span>0%</span>
+                    <span>10%+</span>
+                </div>
+            </div>
+            <div class="sem-dados">
+                <div class="titulo-escala">Sem dados</div>
+                <div class="cor-sem-dados"></div>
+                <span style="color: white; margin-top: 5px; display: inline-block;">0</span>
+            </div>
+        </div>
+        <div class="grafico-container">
+            <div class="grafico-conteudo">
+                <div id="grafico"></div>
+                <div class="eixo-x" id="eixoX"></div>
+            </div>
+        </div>
+        <div class="fonte">Fonte: SISVAN/ Base dos Dados</div>
+    </div>
+    <script src="static\js\script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.titulo {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    letter-spacing: 0.1cap;
+}
+.subtitulo, .paragrafo {
+    text-align: left;
+    margin-bottom: 5px;
+    width: 80%;
+    font-size: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+.grafico-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+.grafico-conteudo {
+    display: inline-block;
+    min-width: 100%;
+}
+.linha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    white-space: nowrap;
+}
+.nome-comunidade {
+    width: 200px;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 0.6rem;
+}
+.conteiner-quadrados {
+    display: inline-flex;
+    flex-grow: 1;
+}
+.quadrado {
+    height: 8px;
+    flex-shrink: 0;
+}
+.legenda {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    font-size: 0.6rem;
+    margin-left: 0;
+    margin-top: 15px;
+}
+.conteiner-escala-cor {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.titulo-escala {
+    margin-bottom: 5px;
+    text-align: center;
+    height: 2.4em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.escala-cor {
+    width: 200px;
+    height: 20px;
+}
+.rotulos-escala {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 5px;
+}
+.sem-dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+.cor-sem-dados {
+    width: 20px;
+    height: 20px;
+    background-color: #E0E0E0;
+}
+.eixo-x {
+    position: relative;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 200px;
+}
+.rotulo-eixo-x {
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 0.5rem;
+}
+.fonte {
+    text-align: right;
+    font-size: 0.5rem;
+    margin-top: 10px;
+    position: sticky;
+    right: 0;
+    bottom: 0;
+}
